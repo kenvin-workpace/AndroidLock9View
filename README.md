@@ -69,8 +69,8 @@ mLock9View.setLock9ViewListener(new Lock9View.ILock9ViewListener() {
     }
 
     @Override
-    public void onFailed(int passwordSize) {
-        Toast.makeText(MainActivity.this, passwordSize < 4 ? "请至少连接4个圆" : "登录失败", Toast.LENGTH_SHORT).show();
+    public void onFailed(int passwordLength) {
+        Toast.makeText(MainActivity.this, passwordLength < 4 ? "请至少连接4个圆" : "登录失败", Toast.LENGTH_SHORT).show();
     }
 });
 

@@ -344,7 +344,7 @@ public class Lock9View extends View {
         boolean isSettingPassWord();
 
         // 失败
-        void onFailed(int passwordSize);
+        void onFailed(int passwordLength);
 
         // 成功
         void onSuccess(String password);
