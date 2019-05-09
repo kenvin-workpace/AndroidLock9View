@@ -63,22 +63,6 @@ public class Lock9View extends View {
         mCircleViews = new ArrayList<>();
     }
 
-    /**
-     * 获取画笔
-     *
-     * @param width 获取绘制画笔
-     * @return 根据线宽、颜色，返回画笔
-     */
-    private Paint getPaint(int width, int color) {
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setColor(color);
-        paint.setStrokeWidth(width);
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeJoin(Paint.Join.ROUND);
-        paint.setStrokeCap(Paint.Cap.ROUND);
-        return paint;
-    }
-
     public Lock9View(Context context) {
         this(context, null);
     }
@@ -296,6 +280,22 @@ public class Lock9View extends View {
                 break;
         }
         return color;
+    }
+
+    /**
+     * 获取画笔
+     *
+     * @param width 获取绘制画笔
+     * @return 根据线宽、颜色，返回画笔
+     */
+    private Paint getPaint(int width, int color) {
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint.setColor(color);
+        paint.setStrokeWidth(width);
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeJoin(Paint.Join.ROUND);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+        return paint;
     }
 
     /**

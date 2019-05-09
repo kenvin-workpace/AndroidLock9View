@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean comparePassWord(String password) {
-                return password != null && pwd.equals(password);
+                return pwd != null && pwd.equals(password);
             }
 
             @Override
