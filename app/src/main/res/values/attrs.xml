@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Lock9View">
+        <!--圆圈&连接线失败颜色-->
+        <attr name="circleColorFailed" format="color"/>
+        <!--圆圈&连接线成功颜色-->
+        <attr name="circleColorSuccess" format="color"/>
+        <!--圆圈默认颜色-->
+        <attr name="circleColorDefault" format="color"/>
+        <!--圆圈&连接线选中颜色-->
+        <attr name="circleColorSelected" format="color"/>
+        <!--连接的宽度-->
+        <attr name="lineWidth" format="dimension"/>
+        <!--圆圈的宽度-->
+        <attr name="circleLineWidth" format="dimension"/>
+        <!--密码长度-->
+        <attr name="passwordLength" format="integer"/>
+    </declare-styleable>
+
+
+</resources>
